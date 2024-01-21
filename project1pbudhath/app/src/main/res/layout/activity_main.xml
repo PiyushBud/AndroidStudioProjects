@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/word_grid"
+        android:layout_centerHorizontal="true"
+        android:columnCount="5"
+        android:layout_below="@id/my_toolbar">
+
+
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+        <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="_" android:textSize="35dp" android:layout_margin="1dp" android:textAlignment="center" />
+    </GridLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/done_button"
+        android:text="Done"
+        android:onClick="onDone"
+        android:layout_below="@id/word_grid"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_grid"
+        android:layout_below="@id/done_button"
+        android:layout_centerHorizontal="true"
+        android:columnCount="5">
+        <Button android:text="A" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="B" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="C" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="D" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="E" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="F" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="G" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="H" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="I" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="J" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="K" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="L" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="M" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="N" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="O" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="P" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="Q" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="R" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="S" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="T" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="U" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="V" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="W" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="X" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="Y" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="Z" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp"/>
+        <Button android:text="DEL" android:backgroundTint="@color/light_black" android:textSize="15dp" android:onClick="letterClick" android:layout_width="75dp" android:layout_height="40dp" android:id="@+id/del_button"/>
+
+    </GridLayout>
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/my_toolbar"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:baselineAligned="true" android:orientation="vertical">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="30sp"
+        android:text="name"
+        android:layout_marginLeft="10dip"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/cost_label"
+        android:textSize="20sp"
+        android:text="Cost per item: $"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/name"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/stock"
+        android:textSize="20sp"
+        android:text="0"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/cost"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/stock_label"
+        android:textSize="20sp"
+        android:text=" in stock"
+        android:layout_toRightOf="@id/stock"
+        android:layout_alignBottom="@id/stock"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/cost"
+        android:textSize="20sp"
+        android:text="0"
+        android:layout_toRightOf="@id/cost_label"
+        android:layout_alignBottom="@id/cost_label"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/disc"
+        android:textSize="0sp"
+        android:text="TextView" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:textSize="0sp"
+        android:text="TextView" />
+</RelativeLayout>

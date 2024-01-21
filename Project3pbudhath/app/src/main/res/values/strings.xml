@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Project3-pbudhath</string>
+    <dimen name="board_margin">20dp</dimen>
+    <dimen name="board_text_size">60dp</dimen>
+    <dimen name="board_size">80dp</dimen>
+    <string name="default_text"></string>
+
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText android:id="@+id/input" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:layout_below="@id/input" android:text="Add" android:layout_width="wrap_content" android:onClick="addElem" android:layout_height="wrap_content" android:id="@+id/add"/>
+    <Button
+        android:layout_below="@id/input"
+        android:layout_toRightOf="@id/add" android:layout_width="wrap_content" android:text="Clear" android:onClick="clearEdit" android:layout_height="wrap_content" android:id="@+id/clear"/>
+    <Button
+        android:id="@+id/del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Delete Done"
+        android:onClick="deleteDone"
+        />
+    <ListView android:id="@+id/mylist"
+        android:layout_below="@id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        />
+</RelativeLayout>

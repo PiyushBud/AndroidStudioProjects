@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/Bill_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill total:   $"
+        android:textSize="20sp"
+        android:layout_alignBottom="@id/Bill_Edit"/>
+
+    <EditText
+        android:id="@+id/Bill_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="bill total"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/Bill_Text"
+        android:textSize="20sp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/People_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many people: "
+        android:layout_alignBottom="@id/People_Edit"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/People_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="if not 1"
+        android:layout_toRightOf="@id/People_Text"
+        android:layout_below="@id/Bill_Text"
+        android:textSize="20sp"
+        android:inputType="number"/>
+    <TextView
+        android:id="@+id/Service_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/People_Edit"
+        android:text="The service was"
+        android:textSize="20sp"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Service_Radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/Service_Text">
+        <RadioButton android:id="@+id/Radio_Exc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent (25%)"
+            android:textSize="20sp"
+            android:onClick="onServiceRadioClick"/>
+        <RadioButton android:id="@+id/Radio_Avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average (20%)"
+            android:textSize="20sp"
+            android:onClick="onServiceRadioClick"/>
+        <RadioButton android:id="@+id/Radio_Bavg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Below Average (15%)"
+            android:textSize="20sp"
+            android:onClick="onServiceRadioClick"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Tip_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Service_Radio"
+        android:text="Tip total:     $"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tip_Total"
+        android:text="Total:           $"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/Total_Per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Total"
+        android:text="Total per:    $"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/Tip_Total_Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Tip_Total"
+        android:layout_alignBottom="@id/Tip_Total"
+        android:layout_alignTop="@id/Tip_Total"
+        android:text=""
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/Total_Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Total"
+        android:layout_alignBottom="@id/Total"
+        android:layout_alignTop="@id/Total"
+        android:text=""
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/Total_Per_Val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Total_Per"
+        android:layout_alignBottom="@id/Total_Per"
+        android:layout_alignTop="@id/Total_Per"
+        android:text=""
+        android:textSize="20sp"/>
+    <fragment
+        class = "com.example.lab4_pbudhath.Fragment1"
+        android:id = "@+id/update_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Total_Per_Val"
+        />
+
+</RelativeLayout>

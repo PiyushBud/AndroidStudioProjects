@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text_Game"
+        android:text="Player 1's Turn"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <GridView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Grid_Game"
+        android:numColumns="3"
+        android:rowCount="3"
+        android:columnWidth="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="20dp"
+        android:layout_below="@+id/Text_Game"
+        >
+    </GridView>
+    <View
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/LineV_1"
+        android:background="@color/black"
+        android:layout_alignTop="@+id/Grid_Game"
+        android:layout_alignBottom="@+id/Grid_Game"
+        android:layout_alignLeft="@id/Grid_Game"
+        android:layout_marginLeft="95dp"/>
+    <View
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/LineV_2"
+        android:background="@color/black"
+        android:layout_alignTop="@+id/Grid_Game"
+        android:layout_alignBottom="@+id/Grid_Game"
+        android:layout_alignLeft="@id/LineV_1"
+        android:layout_marginLeft="105dp"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:id="@+id/LineH_1"
+        android:background="@color/black"
+        android:layout_alignLeft="@id/Grid_Game"
+        android:layout_alignRight="@id/Grid_Game"
+        android:layout_alignTop="@+id/Grid_Game"
+        android:layout_marginTop="95dp"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:id="@+id/LineH_2"
+        android:background="@color/black"
+        android:layout_alignLeft="@id/Grid_Game"
+        android:layout_alignRight="@id/Grid_Game"
+        android:layout_alignTop="@+id/LineH_1"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button_Game_Back"
+        android:text="Back"
+        />
+
+
+</RelativeLayout>

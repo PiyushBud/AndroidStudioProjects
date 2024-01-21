@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    tools:context="com.example.lab2_pbudhath.ServiceSelectActivity">
+
+    <TextView
+        android:id="@+id/Exc_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent: "
+        android:textSize="20sp"
+        android:layout_alignBottom="@id/Exc_Edit"/>
+
+    <EditText
+        android:id="@+id/Exc_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="25"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/Exc_Text"
+        android:textSize="20sp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/Avg_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average: "
+        android:layout_alignBottom="@id/Avg_Edit"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/Avg_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="20"
+        android:layout_toRightOf="@id/Avg_Text"
+        android:layout_below="@id/Exc_Text"
+        android:textSize="20sp"
+        android:inputType="number"/>
+    <TextView
+        android:id="@+id/Bavg_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Below Average: "
+        android:layout_alignBottom="@id/Bavg_Edit"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/Bavg_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="15"
+        android:layout_toRightOf="@id/Bavg_Text"
+        android:layout_below="@id/Avg_Text"
+        android:textSize="20sp"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/Keep_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update the values"
+        android:layout_below="@id/Bavg_Text"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/Cancel_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel with no updates"
+        android:layout_below="@id/Keep_Button"
+        android:onClick="onClick"/>
+
+
+</RelativeLayout>
